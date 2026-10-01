@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belo AI</title>
+  <meta name="description" content="Belo AI - asisten AI online.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">B</div><div><strong>Belo AI</strong><small>Online</small></div></div>
+      <button id="newChat" class="new-chat">＋ Chat baru</button>
+      <div class="history-title">Riwayat</div>
+      <div id="history" class="history"></div>
+      <div class="side-note">Belo AI bisa salah. Periksa kembali info penting.</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button id="menu" class="icon-btn" aria-label="Menu">☰</button>
+        <span>Belo AI</span>
+        <button id="clear" class="icon-btn" aria-label="Hapus chat">⌫</button>
+      </header>
+
+      <section id="chat" class="chat">
+        <div id="welcome" class="welcome">
+          <div class="big-logo">B</div>
+          <h1>Halo, saya Belo AI</h1>
+          <p>Tanyakan apa saja dan saya akan membantu menjawabnya.</p>
+        </div>
+      </section>
+
+      <form id="form" class="composer">
+        <textarea id="input" rows="1" maxlength="12000" placeholder="Tulis pesan untuk Belo AI..." autocomplete="off"></textarea>
+        <button id="send" type="submit" aria-label="Kirim">➤</button>
+      </form>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
